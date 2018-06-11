@@ -26,7 +26,7 @@ server.get('/Adventures',function(request,response){
  server.get('/hottest-games',function(request,response){
     response.render('hottest-games.ejs')
 })
-var port = 8080
+var port = process.env.PORT 
 
 server.listen(port, () => { 
     console.log('Server running on port:'+port)
